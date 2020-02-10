@@ -118,7 +118,7 @@ def movies_with_directors_set(source)
   while index < source.length do
     dir_name = source[index][:name]
     movizz = source[index][:movies]
-    arr << movies_with_director_key(dir_name, source)
+    arr << movies_with_director_key(dir_name, movizz)
     index += 1
   end
  return arr 
